@@ -1,5 +1,5 @@
 """
-Deep Learning Assignment — Video Object Detection using YOLOv8
+Deep Learning Project — Video Object Detection using YOLOv8
 Run: python detect_video.py
 """
 
