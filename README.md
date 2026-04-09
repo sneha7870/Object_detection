@@ -1,7 +1,7 @@
-# 🎯 Video Object Detection — YOLOv8
-Deep Learning Assignment
+# Video Object Detection — YOLOv8
+Deep Learning project
 
-## 📁 Files
+## Files
 ```
 object_detection/
 ├── detect_video.py                    ← Main script
@@ -12,7 +12,7 @@ object_detection/
     └── detection_stats.png            ← Charts (generated)
 ```
 
-## ⚙️ Setup & Run
+## Setup & Run
 
 ### Step 1 — Install dependencies
 ```bash
@@ -30,14 +30,14 @@ That's it! The script will:
 3. Save annotated video → `output/detected_output.mp4`
 4. Show + save detection statistics → `output/detection_stats.png`
 
-## 🔧 Configuration (top of detect_video.py)
+##  Configuration (top of detect_video.py)
 | Parameter | Default | Description |
 |-----------|---------|-------------|
 | `CONFIDENCE` | 0.40 | Min detection confidence (lower = more detections) |
 | `MODEL_NAME` | yolov8n.pt | Model size (n/s/m/l/x — bigger = more accurate) |
 | `DEVICE` | auto | Uses GPU if available, else CPU |
 
-## 🧠 How It Works
+##  How It Works
 1. **YOLOv8** (You Only Look Once v8) processes each frame as a whole image
 2. **Backbone (CSPDarknet)** extracts multi-scale feature maps
 3. **Neck (PANet)** fuses features across scales
@@ -45,10 +45,10 @@ That's it! The script will:
 5. **NMS** (Non-Maximum Suppression) removes duplicate detections
 6. Results drawn on frame with class name + confidence score
 
-## 📦 Model Options
+##  Model Options
 | Model | Speed | Accuracy |
 |-------|-------|----------|
-| yolov8n.pt | ⚡ Fastest | Good |
+| yolov8n.pt |  Fastest | Good |
 | yolov8s.pt | Fast | Better |
 | yolov8m.pt | Medium | Best for assignment |
 | yolov8l.pt | Slow | High |
